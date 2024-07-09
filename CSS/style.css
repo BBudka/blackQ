@@ -17,6 +17,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 body a {
   text-decoration: none;
@@ -25,11 +27,13 @@ body a {
 section {
   max-width: var(--max-width);
   margin: auto;
+  display: block;
 }
 .container {
   max-width: 1000px;
   margin: auto;
   padding-right: 5rem;
+  display: block;
 }
 .text-center {
   text-align: center;
@@ -39,9 +43,12 @@ section {
   color: #005b4c;
 }
 
-.bg-light {
+.bg-black {
   background: #fff;
   color: #333;
+}
+.bg-white {
+  color: #fff;
 }
 .bg-primary {
   background: #005b4c;
@@ -127,6 +134,7 @@ section {
 #special {
   width: var(--max-width);
   height: 60vh;
+  display: block;
 }
 .container .sectionHeader {
   width: 100%;
@@ -151,7 +159,7 @@ section {
   justify-content: end;
 }
 .container .sectionHeader .infoStats {
-  width: 90%;
+  width: 100%;
   height: 10%;
   background-color: #005b4c;
   display: flex;
@@ -207,12 +215,13 @@ section {
 /* card lists */
 
 .card-section {
+  display: block;
   width: var(--max-width);
-  height: 59rem;
-  /* height: 110vh or vb?; */
+  display: flex;
+  flex-direction: column;
 }
 
-.products {
+.card-section .products {
   width: 110%;
   height: 70vh;
   display: grid;
@@ -224,6 +233,9 @@ section {
   margin: 1rem;
   display: block;
 }
+
+/* wishlist */
+
 .products .card .wishlist {
   display: block;
   position: absolute;
@@ -231,7 +243,6 @@ section {
   left: 10px;
   font-size: 1.5rem;
   opacity: 0;
-  visibility: hidden;
   transition: opacity 0.5s, visibility 0s 0.5s;
 }
 .products .card:hover .wishlist {
@@ -239,6 +250,7 @@ section {
   visibility: visible;
   transition: opacity 0.5s, visibility 0.5s 0s;
 }
+/* ------------------ */
 
 .products .card .WineImg {
   width: 100%;

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="/CSS/mobile.css"
+    />
     <script
       src="https://kit.fontawesome.com/98f2c5b3b8.js"
       crossorigin="anonymous"
@@ -23,13 +28,19 @@
         </div>
         <div class="search">
           <input type="text" placeholder="Хайх..." class="searchType" />
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="/HTML/search_result.html"
+            ><i class="fa-solid fa-magnifying-glass bg-black"></i
+          ></a>
         </div>
 
         <!-- <div class="Bookmark">
           <i class="fa-solid fa-basket-shopping"></i> Хадгалсан
         </div> -->
-        <div class="login btn"><i class="fa-regular fa-user"></i> Нэвтрэх</div>
+        <div class="login btn">
+          <a href="/HTML/login.html" class="bg-white"
+            ><i class="fa-regular fa-user"></i> Нэвтрэх</a
+          >
+        </div>
         <!-- 
       <div class="login">
         <i class="fa-regular fa-user"></i>
@@ -49,10 +60,13 @@
                 Энэ 7 хоногийн
                 <span class="text-primary">Онцлох</span> бүтээгдэхүүн
               </h1>
-              Дэлхий дээрх хамгийн алдартай Испанийн дарсуудын нэг болох N.V.
-              Félix Solís Mucho Mas Tinto-г уламжлал, түүхээс улбаатай гэр
-              бүлийн компани үйлдвэрлэдэг бөгөөд нэр хүндээ хадгалсаар байгаа
-              бүрэн хэмжээний улаан дарс юм.
+              <p>
+                Дэлхий дээрх хамгийн алдартай Испанийн дарсуудын нэг болох N.V.
+                Félix Solís Mucho Mas Tinto-г уламжлал, түүхээс улбаатай гэр
+                бүлийн компани үйлдвэрлэдэг бөгөөд нэр хүндээ хадгалсаар байгаа
+                бүрэн хэмжээний улаан дарс юм.
+              </p>
+
               <button class="btn">Дэлгэрэнгүй</button>
             </div>
           </div>
@@ -86,11 +100,11 @@
           <div class="card"></div>
           <div class="card"></div>
           <div class="card"></div>
-          <h1>></h1>
+          <h1><a href="/HTML/moreInfo.html" class="bg-black">></a></h1>
         </div>
       </div>
     </section>
-    <footer class="footer"></footer>
-    <script src="/JS/scroll.js"></script>
+    <!-- <footer class="footer"></footer> -->
+    <script src="/JS/app.js"></script>
   </body>
 </html>
